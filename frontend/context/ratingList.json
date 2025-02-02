@@ -1,0 +1,14 @@
+[
+  {
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
+    "name": "John Doe",
+    "image": "images/pic-2.jpg",
+    "rating": 4.5
+  },
+  {
+    "description": "Cras ultricies ligula sed magna dictum porta. Proin eget tortor risus.",
+    "name": "Jane Smith",
+    "image": "images/pic-3.jpg",
+    "rating": 5
+  }
+]

@@ -1,0 +1,30 @@
+body {
+  font-size: 25px;
+  color: green;
+}
+
+a {
+  color: blue;
+}
+
+a:hover {
+  color: #ff00aa;
+  background-color: #66ccaa;
+  border: 3px solid #000000;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2211ff;
+  border: 20px solid #111111;
+  padding: 20px;
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "_id": 1,
+    "course_title": "Title-1",
+    "course_description": "Course Description 1",
+    "course_instructor": "John Doe"
+  },
+  {
+    "_id": 2,
+    "course_title": "Title-2",
+    "course_description": "Course Description 2",
+    "course_instructor": "Peter Parker"
+  },
+  {
+    "_id": 3,
+    "course_title": "Title-3",
+    "course_description": "Course Description 3",
+    "course_instructor": "Nathan Drake"
+  },
+  {
+    "_id": 4,
+    "course_title": "Title-4",
+    "course_description": "Course Description 4",
+    "course_instructor": "Alex Moe"
+  },
+  {
+    "_id": 5,
+    "course_title": "Title-5",
+    "course_description": "Course Description 5",
+    "course_instructor": "Alex Moe"
+  },
+  {
+    "_id": 6,
+    "course_title": "Title-6",
+    "course_description": "Course Description 6",
+    "course_instructor": "Alex Moe"
+  }
+]

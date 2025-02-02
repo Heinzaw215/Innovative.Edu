@@ -1,0 +1,26 @@
+[
+  {
+    "description": "Innovative.Edu has transformed my career. The courses are well-structured and the instructors are top-notch.",
+    "name": "John Doe",
+    "image": "images/pic-2.jpg",
+    "rating": 5
+  },
+  {
+    "description": "The hands-on projects and interactive lessons have helped me gain practical skills that I use in my job every day.",
+    "name": "Jane Smith",
+    "image": "images/pic-3.jpg",
+    "rating": 4.5
+  },
+  {
+    "description": "I love the flexibility of learning at my own pace. The support from the instructors and community is amazing.",
+    "name": "Alice Johnson",
+    "image": "images/pic-4.jpg",
+    "rating": 5
+  },
+  {
+    "description": "The courses are very comprehensive and cover all the latest trends and technologies. Highly recommend!",
+    "name": "Bob Brown",
+    "image": "images/pic-5.jpg",
+    "rating": 4
+  }
+]

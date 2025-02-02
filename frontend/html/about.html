@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Innovative.Edu</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../css/header.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="/" class="logo">Innovative.Edu</a>
+
+      TODO: Make Search URL
+      <form action="/search" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search" title="search"></button>
+      </form>
+
+      <span class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </span>
+
+      <div class="profile">
+         <img src="images/img-1.png" class="image" alt="">
+         <h3 class="name">Alex John</h3>
+         <p class="role">Student</p>
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<aside class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Alex John</h3>
+      <p class="role">student</p>
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="/">
+         <i class="fas fa-home"></i>
+         <span>Home</span>
+      </a>
+      <a href="/about">
+         <i class="fas fa-question"></i>
+         <span>About</span>
+      </a>
+      <a href="/courses">
+         <i class="fas fa-graduation-cap"></i>
+         <span>Courses</span>
+      </a>
+      <a href="/teacher">
+         <i class="fas fa-chalkboard-user"></i>
+         <span>Teachers</span>
+      </a>
+      <a href="/contact">
+         <i class="fas fa-headset"></i>
+         <span>Contact us</span>
+      </a>
+   </nav>
+
+</aside>
+
+<section class="about">
+
+   <div class="row">
+
+      <div class="image">
+         <img src="images/about-img.svg" alt="">
+      </div>
+
+      <section class="content">
+         <h3>Why Choose Us?</h3>
+         <p>At <strong>Innovative.Edu</strong>, we are committed to providing <strong>high-quality education</strong> that is
+            accessible to everyone. Our courses are designed by <strong>industry experts</strong> to ensure you gain the
+            skills needed to excel in your career. We offer a wide range of courses in various fields, including
+            <strong>technology</strong>, <strong>business</strong>, and <strong>design</strong>.</p>
+         <p>Our platform is <strong>user-friendly</strong> and provides a seamless learning experience. With our
+            <strong>interactive lessons</strong>, <strong>hands-on projects</strong>, and <strong>personalized
+               feedback</strong>, you can learn at your own pace and achieve your goals.</p>
+         <ul>
+            <li>Expert Instructors</li>
+            <li>Flexible Learning</li>
+            <li>Affordable Prices</li>
+            <li>Certification of Completion</li>
+         </ul>
+         <a href="courses.html" class="inline-btn">Explore Our Courses</a>
+      </section>
+
+   </div>
+
+   <div class="box-container">
+
+      <div class="box">
+         <i class="fas fa-graduation-cap"></i>
+         <div>
+            <h3>+10k</h3>
+            <p>Online Courses</p>
+         </div>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-user-graduate"></i>
+         <div>
+            <h3>+40k</h3>
+            <p>Brilliant Students</p>
+         </div>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-chalkboard-user"></i>
+         <div>
+            <h3>+2k</h3>
+            <p>Expert Tutors</p>
+         </div>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-briefcase"></i>
+         <div>
+            <h3>100%</h3>
+            <p>Job Placement</p>
+         </div>
+      </div>
+
+   </div>
+
+</section> 
+
+<section class="reviews">
+
+   <h1 class="heading">Student's reviews</h1>
+
+   <div class="box-container">
+
+      <div id="reviews-container">
+         <!-- Reviews will generated on this. -->
+      </div>
+
+   </div>
+
+</section>
+
+<footer class="footer">
+
+   &copy; copyright @ 2022 by <span>mr. web designer</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="../js/script.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+
+   
+</body>
+</html>
