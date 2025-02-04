@@ -8,7 +8,7 @@ const courseSchema = new mongoose.Schema(
       trim: true,
     },
     course_description: {
-      type: String,
+    type: String,
       required: false,
       trim: true,
     },

@@ -53,30 +53,30 @@ const upload = multer({ storage });
 // Routes
 app.use("/api", routes);
 
-// Index Page
-app.get("/", (req, res) => {
-  res.render("pages/home.ejs");
-});
+// // Index Page
+// app.get("/", (req, res) => {
+//   res.render("Hello World!!");
+// });
 
-// About Page
-app.get("/about", (req, res) => {
-  res.render("pages/about.ejs");
-});
+// // About Page
+// app.get("/about", (req, res) => {
+//   res.render("pages/about.ejs");
+// });
 
-// Courses Page
-app.get("/courses", (req, res) => {
-  res.render("pages/about.ejs");
-});
+// // Courses Page
+// app.get("/courses", (req, res) => {
+//   res.render("pages/about.ejs");
+// });
 
-// Teachers Page
-app.get("/teachers", (req, res) => {
-  res.render("pages/about.ejs");
-});
+// // Teachers Page
+// app.get("/teachers", (req, res) => {
+//   res.render("pages/about.ejs");
+// });
 
-// Contact Page
-app.get("/contact", (req, res) => {
-  res.render("pages/about.ejs");
-});
+// // Contact Page
+// app.get("/contact", (req, res) => {
+//   res.render("pages/about.ejs");
+// });
 
 // Error Handling Middleware
 app.use((req, res, next) => {
@@ -85,8 +85,8 @@ app.use((req, res, next) => {
   next(error);
 });
 
-app.use((error, req, res, next) => {
-  res.status(error.status || 500);
+app.use((error, req, res, next) => { 
+  res.status(error.status || 5000);
   res.send("<h1>Error: Page Not Found</h1>");
 });
 

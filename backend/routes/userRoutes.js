@@ -27,7 +27,7 @@ const upload = multer({ storage });
 router.post("/register", registerUser);
 router.post("/login", loginUser);
 router.get("/profile", protect, getUserProfile);
+router.post("/profile/update", upload.single("profilePic"), updateProfile);
 router.get("/:name", getUserProfile)
-router.post("/update-profile", upload.single("profilePic"), updateProfile);
 
 export default router;
