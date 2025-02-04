@@ -5,7 +5,7 @@ import multer from "multer";
 import path from "path";
 import { fileURLToPath } from "url";
 import routes from "./routes/index.js";
-import cors from "cors";
+// import cors from "cors";
 
 dotenv.config();
 
@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // CORS Middleware
-app.use(cors());
+// app.use(cors());
 
 // Resolve __dirname and __filename in ES6 modules
 const __filename = fileURLToPath(import.meta.url);
@@ -33,7 +33,7 @@ const __dirname = path.dirname(__filename);
 app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
 
 // Serve static files (CSS, JS, images)
-app.use(express.static(path.join(__dirname, "../frontend/public")));
+// app.use(express.static(path.join(__dirname, "../")));
 
 // Multer Middleware for uploading files
 const storage = multer.diskStorage({
@@ -51,32 +51,43 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 // Routes
-app.use("/api", routes);
+// app.use("/api", routes);
 
-// // Index Page
-// app.get("/", (req, res) => {
-//   res.render("Hello World!!");
-// });
+// Index Page
+app.get("/", (req, res) => {
+  console.log("Index Page Hit");
+  res.render("home", { title: "Home" });
+});
 
-// // About Page
-// app.get("/about", (req, res) => {
-//   res.render("pages/about.ejs");
-// });
+// About Page
+app.get("/about", (req, res) => {
+  console.log("About Page Hit");
+  res.render("about", { title: "About" });
+});
 
-// // Courses Page
-// app.get("/courses", (req, res) => {
-//   res.render("pages/about.ejs");
-// });
+// Courses Page
+app.get("/courses", (req, res) => {
+  console.log("Courses Page Hit");
+  res.render("courses", { title: "Courses" });
+});
 
-// // Teachers Page
-// app.get("/teachers", (req, res) => {
-//   res.render("pages/about.ejs");
-// });
+// Teachers Page
+app.get("/teachers", (req, res) => {
+  console.log("Teachers Page Hit");
+  res.render("teachers", { title: "Teachers" });
+});
 
-// // Contact Page
-// app.get("/contact", (req, res) => {
-//   res.render("pages/about.ejs");
-// });
+// Contact Page
+app.get("/contact", (req, res) => {
+  console.log("Contact Page Hit");
+  res.render("contact", { title: "Contact" });
+});
+
+// 404 Page
+app.use((req, res) => {
+  console.log("404 Page Hit");
+  res.status(404).render("404", { title: "404" });
+});
 
 // Error Handling Middleware
 app.use((req, res, next) => {
@@ -85,8 +96,8 @@ app.use((req, res, next) => {
   next(error);
 });
 
-app.use((error, req, res, next) => { 
-  res.status(error.status || 5000);
+app.use((error, req, res, next) => {
+  res.status(error.status || 500);
   res.send("<h1>Error: Page Not Found</h1>");
 });
 
