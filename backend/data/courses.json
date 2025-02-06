@@ -1,0 +1,56 @@
+[
+  {
+    "tutorImage": "images/pic-2.jpg",
+    "tutorName": "john deo",
+    "date": "21-10-2022",
+    "thumbImage": "images/thumb-1.png",
+    "videos": "10 videos",
+    "title": "complete HTML tutorial",
+    "playlistLink": "/playlist/HTML"
+  },
+  {
+    "tutorImage": "images/pic-3.jpg",
+    "tutorName": "john deo",
+    "date": "21-10-2022",
+    "thumbImage": "images/thumb-2.png",
+    "videos": "10 videos",
+    "title": "complete CSS tutorial",
+    "playlistLink": "/playlist/CSS"
+  },
+  {
+    "tutorImage": "images/pic-4.jpg",
+    "tutorName": "john deo",
+    "date": "21-10-2022",
+    "thumbImage": "images/thumb-3.png",
+    "videos": "10 videos",
+    "title": "complete JS tutorial",
+    "playlistLink": "/playlist/JavaScript"
+  },
+  {
+    "tutorImage": "images/pic-5.jpg",
+    "tutorName": "john deo",
+    "date": "21-10-2022",
+    "thumbImage": "images/thumb-4.png",
+    "videos": "10 videos",
+    "title": "Complete Bootstrap tutorial",
+    "playlistLink": "/playlist/Bootstrap"
+  },
+  {
+    "tutorImage": "images/pic-6.jpg",
+    "tutorName": "john deo",
+    "date": "21-10-2022",
+    "thumbImage": "images/thumb-5.png",
+    "videos": "10 videos",
+    "title": "complete JQuery tutorial",
+    "playlistLink": "/playlist/JQuery"
+  },
+  {
+    "tutorImage": "images/pic-7.jpg",
+    "tutorName": "john deo",
+    "date": "21-10-2022",
+    "thumbImage": "images/thumb-6.png",
+    "videos": "10 videos",
+    "title": "complete SASS tutorial",
+    "playlistLink": "/playlist/SASS"
+  }
+]

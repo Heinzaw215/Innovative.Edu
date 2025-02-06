@@ -1,0 +1,31 @@
+<header class="header">
+  <section class="flex">
+    <a href="/" class="logo">Innovative.Edu</a>
+
+    <form action="/search" method="get" class="search-form">
+      <input type="text" name="search_box" required placeholder="search courses..." maxlength="100" />
+      <button type="submit" class="fas fa-search"></button>
+    </form>
+
+    <div class="icons">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <div id="search-btn" class="fas fa-search"></div>
+      <div id="user-btn" class="fas fa-user"></div>
+      <div id="toggle-btn" class="fas fa-sun"></div>
+    </div>
+
+    <div class="profile">
+      <% if (user) { %>
+      <img src="images/pic-1.jpg" class="image" alt="<%= user.name %>" />
+      <h3 class="name"><%= user.name %></h3>
+      <p class="role"><%= user.role %></p>
+      <a href="/user/profile" class="btn">View Profile</a>
+      <% } else { %>
+      <div class="flex-btn">
+        <a href="/login" class="option-btn">Login</a>
+        <a href="/register" class="option-btn">Register</a>
+      </div>
+      <% } %>
+    </div>
+  </section>
+</header>
